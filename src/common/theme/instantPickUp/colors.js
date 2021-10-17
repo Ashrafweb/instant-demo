@@ -1,0 +1,27 @@
+const colors = {
+    transparent: 'transparent',
+    labelColor: '#767676',
+    lightBorder: '#f1f4f6',
+    inactiveField: '#F7F8FB',
+    inactiveButton: '#b7dbdd',
+    inactiveIcon: '#EBEBEB',
+    primaryHover: '#000000',
+    secondary: '#80B431',
+    secondaryHover: '#80B431',
+    yellow: '#F9EA32',
+    yellowHover: '#F9EA32',
+    borderColor: '#F9EA33',
+    black: '#000000',
+    white: '#ffffff',
+    light: '#FAFBFF',
+    gray: '#E4E4E4',
+    primary: '#F9EA32',
+    headingColor: '#0F2137',
+    quoteText: '#343D48',
+    menu: '#0D233E',
+    textColor: 'rgba(52, 61, 72, 0.8)',
+    linkColor: '#2b9eff',
+    shadow: 'rgba(38, 78, 118, 0.1)',
+};
+
+export default colors;
