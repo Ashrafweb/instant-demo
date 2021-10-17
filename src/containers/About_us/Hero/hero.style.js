@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-
+import bg from "../../../common/assets/image/about_us/about_bg.png"
 const SectionWrapper = styled.section`
   padding: 60px 0 45px;
- 
+  background-image: url(${bg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media only screen and (max-width: 991px) {
     padding: 85px 0 90px;
   }
@@ -15,6 +18,7 @@ const SectionWrapper = styled.section`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-bottom: 4rem;
     @media only screen and (min-width: 1367px) {
       max-width: 1290px;
     }
@@ -25,6 +29,7 @@ export const ThumbWrapper = styled.div`
   width: calc(100% - 600px);
   display: flex;
   justify-content: flex-end;
+  padding-right: 80px;
   @media only screen and (max-width: 991px) {
     width: calc(100% - 380px);
   }
@@ -38,8 +43,10 @@ export const ThumbWrapper = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 550px;
+ 
+  padding-left: 90px;
   margin-top: 50px;
+  width: 600px;
   @media only screen and (max-width: 1219px) {
 
   }
@@ -51,35 +58,52 @@ export const TextWrapper = styled.div`
   }
   @media only screen and (max-width: 624px) {
     width: 100%;
+    padding-left: 0px;
+    margin-top: 10px;
   }
   h1{
-      width: fit-content;
-      font-size: 5rem;
       color:  ${themeGet('colors.black')};
       font-family: Montserrat;
       font-style: normal;
       font-weight: 600;
+      font-size: 42px;
+      line-height: 51px;
       margin-bottom: 0.4rem;
-      border-bottom: 10px solid  ${themeGet('colors.secondary')};;
-      height: 80px;
+      z-index:100;
       @media only screen and (max-width: 991px) {
       font-size: 36px;
-      margin-left: 10px;
-      margin-bottom: 0.2rem;
       width: fit-content;
       height: 38px;
     }
+    @media only screen and (max-width: 768px) {
+      font-size: 36px;
+      line-height: 40px;
+      font-weight: 600;
+    }
   }
+
+  .text__border__bottom{
+    height: 10px;
+    width: 132px;
+    margin-top: -23px;
+    z-index: 1 !important;
+    background: ${themeGet('colors.secondary')} ;
+    @media only screen and (max-width: 780px) {
+      width: 117px;
+      margin-top: -20px;
+    }
+  }
+
+
   h2 {
     color: ${themeGet('colors.black')};
-    font-family: Montserrat;
+    font-family: Epilogue;
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 60px;
-    width: 600px;
+    font-size: 36px;
+    line-height: 56px;
     margin-top: 40px;
-    margin-left: 50px;
+    text-transform: capitalize;
     @media only screen and (max-width: 1219px) {
       font-size: 44px;
     }
@@ -87,23 +111,23 @@ export const TextWrapper = styled.div`
       font-size: 32px;
       line-height: 40px;
       margin-top: 20px;
-      margin-left: 10px;
       width: 100%;
     }
   }
 
   span{
     color: ${themeGet('colors.secondary')};
-    font-family: Montserrat;
+    font-family: Epilogue;
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 56px;
     @media only screen and (max-width: 1219px) {
       font-size: 44px;
     }
     @media only screen and (max-width: 991px) {
       font-size: 32px;
+      line-height: 36px;
     }
   }
 
@@ -121,7 +145,7 @@ export const TextWrapper = styled.div`
     font-size: 17px;
     line-height: 2;
     margin-bottom: 0;
-    padding-right: 20px;
+    width: 550px;
     @media only screen and (max-width: 991px) {
       font-size: 16px;
       line-height: 1.8;
@@ -134,20 +158,19 @@ export const TextWrapper = styled.div`
   h6{
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-    padding: 5px 0px;
-    margin-left: 50px;
     text-align: justify;
+    width: 550px;
     @media only screen and (max-width: 991px) {
       font-size: 16px;
-      margin-left: 10px;
+      width: 300px;
     }
     @media only screen and (max-width: 680px) {
       font-size: 16px;
-      margin-left: 10px;
+      width: 100%;
       text-align: justify;
     }
   }

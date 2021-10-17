@@ -6,7 +6,7 @@ export const GitWrapper = styled.div`
 }
     width: 100%;
     height: max-content;
-    margin-top: 125px;
+    margin-top: 96px;
     border-bottom: 1px solid #bdbdbd;
     display: flex;
     flex-direction: row;
@@ -62,12 +62,15 @@ export const GitDescription = styled.div`
     }
 
     h2 {
-    border-bottom: 10px solid #8FC045;
+    border-bottom: 8px solid #8FC045;
     height: 44px;
     font-size: 2.5em;
     @media(max-width: 1250px) {
-        border-bottom: 5px solid #8FC045;
+        border-bottom: 8px solid #8FC045;
         font-size: 2em;
+    }
+    @media(max-width: 480px) {
+        height: 33px;
     }
      }
      h4 {
@@ -98,7 +101,12 @@ export const SocialContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     
-    
+    @media screen and (max-width: 480px) {
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
     
     
     `
@@ -113,6 +121,9 @@ export const ImageWrapper = styled.div`
     img {
     width: 20%;
     height: auto;
+    }
+    @media screen and (max-width: 480px) {
+        display: none;
     }
 `
 

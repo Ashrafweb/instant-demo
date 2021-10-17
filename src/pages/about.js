@@ -5,21 +5,15 @@ import { ResetCSS } from 'common/assets/css/style';
 import GlobalFonts from '../common/assets/fonts/fonts'
 import Sticky from 'react-stickynode';
 import Navbar from 'containers/HomePage/Navbar'
-import Banner from 'containers/DriverPage/Banner';
 import GlobalStyle, {
     AppWrapper,
     ContentWrapper,
 } from 'containers/HomePage/instantTheme.style';
-
-import AppPreview from 'containers/DriverPage/dsu_appPreview';
-import Offer from 'containers/DriverPage/dsu_offer';
 import Footer from 'containers/Footer';
-import Faq from 'containers/Faq';
-import DriverNeeds from 'containers/DriverPage/dsu_need';
 import Hero from 'containers/About_us/Hero';
 import Values from 'containers/About_us/Values';
 
-const HomePage = () => {
+const About = () => {
     return (
         <ThemeProvider theme={theme}>
             <>
@@ -37,12 +31,13 @@ const HomePage = () => {
                 <ResetCSS />
                 <GlobalStyle />
                 <GlobalFonts />
+
                 {/* end of global and reset style */}
 
-                {/* start Driverpage */}
+                {/* start Aboutpage */}
                 <AppWrapper>
                     <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-                        <Navbar active="about_us" />
+                        <Navbar active="About Us" />
                     </Sticky>
                     <ContentWrapper>
                         <Hero />
@@ -50,9 +45,9 @@ const HomePage = () => {
                         <Footer />
                     </ContentWrapper>
                 </AppWrapper>
-                {/* end of Homepage landing */}
+                {/* end of About  */}
             </>
         </ThemeProvider>
     );
 };
-export default HomePage;
+export default About;

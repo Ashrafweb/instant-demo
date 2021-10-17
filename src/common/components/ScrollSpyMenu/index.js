@@ -1,19 +1,17 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Scrollspy from 'react-scrollspy';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
+import Button from '../Button';
 import { DrawerContext } from '../../contexts/DrawerContext';
-
-const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
+import Link from '../Link';
+import { useRouter } from 'next/router';
+const ScrollSpyMenu = ({ className, menuItems, drawerClose, activeMenu, ...props }) => {
   const { dispatch } = useContext(DrawerContext);
   // empty array for scrollspy items
-  const scrollItems = [];
+
 
   // convert menu path to scrollspy items
-  menuItems.forEach((item) => {
-    scrollItems.push(item.path.slice(1));
-  });
+
 
   // Add all classs to an array
   const addAllClasses = ['scrollspy__menu'];
@@ -29,37 +27,38 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       type: 'TOGGLE',
     });
   };
-
   return (
     <Scrollspy
-      items={scrollItems}
       className={addAllClasses.join(' ')}
       drawerClose={drawerClose}
       {...props}
     >
       {menuItems.map((menu, index) => (
-        <li key={`menu-item-${index}`}>
+        <li key={`menu-item-${index}`} className={activeMenu === menu.label ? 'active' : ''}>
           {menu.staticLink ? (
             <a href={menu.path}>{menu.label}</a>
           ) : (
             <>
               {drawerClose ? (
-                <AnchorLink
+                <Link
                   href={menu.path}
                   offset={menu.offset}
                   onClick={toggleDrawer}
                 >
                   {menu.label}
-                </AnchorLink>
+                </Link>
               ) : (
-                <AnchorLink href={menu.path} offset={menu.offset}>
+                <Link href={menu.path} offset={menu.offset}>
                   {menu.label}
-                </AnchorLink>
+                </Link>
               )}
             </>
           )}
         </li>
       ))}
+      <Link href="/git" offset={84}>
+        <Button title="Get In Touch" />
+      </Link>
     </Scrollspy>
   );
 };

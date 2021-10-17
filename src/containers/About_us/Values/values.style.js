@@ -154,6 +154,7 @@ export const ValueWrapper = styled.div`
     color: ${themeGet('colors.headingColor', '#0F2137')};
     margin: 0;
     letter-spacing: -1px;
+    text-transform: capitalize;
     @media only screen and (max-width: 1366px) {
       font-size: 36px;
       letter-spacing: -0.7px;

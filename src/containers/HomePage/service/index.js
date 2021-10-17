@@ -23,7 +23,7 @@ const Banner = () => {
                 <BannerContent>
                     <Fade delay={100}>
                         <h1>
-                            Same Day <span>Removal <div className="text__border"></div></span> Service That Changes The World One Van At A Time
+                            Same Day <span>Removal <div className="text__border__bottom"></div></span> Service That Changes The World One Van At A Time
                         </h1>
                     </Fade>
                     <Fade delay={200}>

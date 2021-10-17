@@ -24,6 +24,7 @@ const Banner = () => {
                             content="Save The Planet And Start Earning Money With Instant Pickup"
                         />
                     </Fade>
+                    <div className="text__border__bottom"></div>
                     <Fade delay={400}>
                         <ButtonGroup>
                             <Button className="trail" title="Apply Now" />

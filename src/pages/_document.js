@@ -32,7 +32,7 @@ export default class CustomDocument extends Document {
         <Head>
           <link rel="shortcut icon" type="image/x-icon" href={InstantIcon} />
           <link
-            href="https://fonts.googleapis.com/css?family=Nobile:300,500,700|Montserrat:300,400,500,700|Lato:400,700|Poppins:400,500,600,700|Roboto:400,500,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Epilogue:300,400,500,700|Nobile:300,500,700|Montserrat:300,400,500,700|Lato:400,700|Poppins:400,500,600,700|Roboto:400,500,700&display=swap"
             rel="stylesheet"
           />
         </Head>

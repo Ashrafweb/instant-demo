@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Icon from 'react-icons-kit';
-import { socialDribbbleOutline } from 'react-icons-kit/ionicons/socialDribbbleOutline';
 import { SocialProfileWrapper, SocialProfileItem } from './socialProfile.style';
 import Image from 'common/components/Image';
 

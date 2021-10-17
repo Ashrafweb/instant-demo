@@ -5,25 +5,24 @@ import { ResetCSS } from 'common/assets/css/style';
 import GlobalFonts from '../common/assets/fonts/fonts'
 import Sticky from 'react-stickynode';
 import Navbar from 'containers/HomePage/Navbar'
-import Banner from 'containers/HomePage/service';
-import FeatureTab from 'containers/HomePage/feature';
+import Banner from 'containers/DriverPage/Banner';
 import GlobalStyle, {
     AppWrapper,
     ContentWrapper,
 } from 'containers/HomePage/instantTheme.style';
-import Description from 'containers/HomePage/description';
-import Mission from 'containers/HomePage/Mission';
-import GetStarted from 'containers/HomePage/getStarted';
+
+import AppPreview from 'containers/DriverPage/dsu_appPreview';
+import Offer from 'containers/DriverPage/dsu_offer';
 import Footer from 'containers/Footer';
 import Faq from 'containers/Faq';
-import SideNav from 'containers/HomePage/Side__Nav';
+import DriverNeeds from 'containers/DriverPage/dsu_need';
 
 const HomePage = () => {
     return (
         <ThemeProvider theme={theme}>
             <>
                 <Head>
-                    <title>Home | Instant-Pickup</title>
+                    <title>Driver Page | Instant-Pickup</title>
                     <meta name="Description" content="Instant Pickup" />
                     <meta name="theme-color" content="#2563FF" />
                     <meta
@@ -38,20 +37,18 @@ const HomePage = () => {
                 <GlobalFonts />
                 {/* end of global and reset style */}
 
-                {/* start Homepage */}
+                {/* start Driverpage */}
                 <AppWrapper>
                     <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-                        <Navbar active="Home" />
+                        <Navbar active="Become a Driver" />
                     </Sticky>
                     <ContentWrapper>
                         <Banner />
-                        <Description />
-                        <Mission />
-                        <FeatureTab />
-                        <GetStarted />
+                        <DriverNeeds />
+                        <AppPreview />
+                        <Offer />
                         <Faq />
                         <Footer />
-                        <SideNav />
                     </ContentWrapper>
                 </AppWrapper>
                 {/* end of Homepage landing */}
