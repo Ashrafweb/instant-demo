@@ -11,7 +11,7 @@ import GlobalStyle, {
 } from 'containers/HomePage/instantTheme.style';
 import GetInTouch from 'containers/GetInTouch';
 import Footer from 'containers/Footer';
-const HomePage = () => {
+const Git = () => {
     return (
         <ThemeProvider theme={theme}>
             <>
@@ -44,4 +44,4 @@ const HomePage = () => {
         </ThemeProvider>
     );
 };
-export default HomePage;
+export default Git;

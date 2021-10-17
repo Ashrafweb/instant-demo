@@ -18,10 +18,12 @@ const Hero = () => {
             <Container>
                 <TextWrapper>
                     <Fade delay={500}>
-                        <Heading content={heading} as="h1" />
+                        <h1>About Us</h1>
+
                     </Fade>
+                    <div className="text__border__bottom"></div>
                     <Fade delay={700}>
-                        <h2>Be the <span>Solution</span> and not the Pollution</h2>
+                        <h2>Be the <span>Solution!</span><br /> not the Pollution!</h2>
                     </Fade>
                     <Fade delay={900}>
                         <Text as="h6" content={description} />

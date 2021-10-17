@@ -4,10 +4,8 @@
 import heroImg from '../../assets/image/about_us/solution.svg';
 
 export const hero = {
-    heading: 'About Us',
 
-    description:
-        'We believe that the air you and your children breathe does not have to be polluted with toxic fumes from the diesel vans driving your neighbourhood. Therefore we have creared Instant Pickup a sustainable platform where businesses and individuals can find emission free electric vans for their same day logistic needs.',
+    description: 'Your children deserve clean air to breathe, free from toxic diesel fumes. Help make our neighborhoods cleaner with Instant Pickup, a sustainable same-day logistics platform that will move your goods and belongings without any smog to speak of. Our emission free vans are ready to go!',
     heroImg: heroImg,
 };
 

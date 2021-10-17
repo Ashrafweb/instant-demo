@@ -32,7 +32,7 @@ const FeatureSliderWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    width: 100vw;
     @media (max-width: 1440px) {
       background-position: bottom;
     }
@@ -129,7 +129,7 @@ const FeatureSliderWrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-
+       
       .image-gallery-bullets-container {
         margin-top: 20px;
         margin: 0;
@@ -147,7 +147,8 @@ const FeatureSliderWrapper = styled.div`
           border-radius: 50%;
           top: 50%;
           left: 0;
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 1px #D0DBC1;
+          border: 4px solid #D0DBC1;
           z-index: 1;
           background: #fff;
           -webkit-transform: translateY(-50%);
@@ -170,7 +171,7 @@ const FeatureSliderWrapper = styled.div`
           }
           &.active {
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-            background: #fff;
+            background: #D0DBC1;
             width: 25px;
             height: 25px;
             &::after {

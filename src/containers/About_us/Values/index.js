@@ -25,7 +25,7 @@ const Values = () => {
             <Container>
                 <SectionHeader>
                     <Fade delay={500}>
-                        <Heading as="h2" content={title} />
+                        <h2>Our <span style={{ color: '#8FC046' }}>Values</span></h2>
                     </Fade>
                 </SectionHeader>
                 <ValueMainWrap>
@@ -36,7 +36,6 @@ const Values = () => {
                                     key={`${index}`}
                                     id={`${item.id}`}
                                     className={`value__item  item${item.id}`}
-                                    bg={item.bgImg}
                                     icon={
                                         <Image
                                             src={item.icon}

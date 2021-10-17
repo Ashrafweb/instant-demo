@@ -82,6 +82,9 @@ export const ResetCSS = createGlobalStyle`
   .sticky-active .active a{
         color: #8FC045 !important;
         text-shadow: 0px -1px 6px white; 
+        @media screen and (max-width: 680px){
+          color: #000000 !important;
+        }
     }
 
   .read-or-hide{

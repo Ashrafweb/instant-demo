@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-//import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
+import { Modal } from '@redq/reuse-modal';
 import Google from 'common/assets/image/social/Google.svg';
 import Instagram from 'common/assets/image/social/Instagram.svg';
 import LinkedIn from 'common/assets/image/social/Linkedin.svg';
@@ -10,13 +11,9 @@ import {
     FormContainer, GitWrapper, GitDescription, FieldWrapper,
     FormRow, FormRowFirst, ImageWrapper, SocialContainer, FormSubmit
 } from './git.style';
-//import 'react-responsive-modal/styles.css';
 //import { Modal } from 'react-responsive-modal';
 
-//import Loading from 'react-fullscreen-loading';
 
-
-// git -> Get In Touch
 const GetInTouch = () => {
     const [open, setOpen] = useState(false);
     const [modalMessage, setModalMessage] = useState('');
@@ -137,7 +134,7 @@ const GetInTouch = () => {
 
                 </FormContainer>
             </GitWrapper>
-            {/* <Modal
+            <Modal
                 open={open}
                 onClose={onCloseModal}
                 center
@@ -149,11 +146,8 @@ const GetInTouch = () => {
             >
                 {modalMessage}
             </Modal>
-            <Loading
-                loading={loading}
-                background='rgba(92, 184, 92, 0.233)'
-                loaderColor='#8FC045'
-            /> */}
+
+
         </>
     );
 };

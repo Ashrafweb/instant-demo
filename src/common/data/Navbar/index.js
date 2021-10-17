@@ -7,18 +7,24 @@ export const navbar = {
     navMenu: [
         {
             id: 1,
+            label: 'Home',
+            path: '/homepage',
+            offset: '84',
+        },
+        {
+            id: 2,
             label: 'About Us',
             path: '/about',
             offset: '84',
         },
         {
-            id: 2,
+            id: 3,
             label: 'Become a Driver',
-            path: '/driverpage',
+            path: '/driver',
             offset: '84',
         },
         {
-            id: 3,
+            id: 4,
             label: 'Log In',
             path: '/signIn',
             offset: '84',

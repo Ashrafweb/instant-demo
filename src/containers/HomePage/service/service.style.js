@@ -74,12 +74,13 @@ export const BannerContent = styled.div`
   span{
     display: inline;
   }
-  .text__border{
+  .text__border__bottom{
     border-bottom : 10px solid ${themeGet('colors.secondary')};
     height: 10px;
     width: 188px;
     margin-top: -20px;
     margin-left: 235px;
+    margin-bottom: 10px;
     background: ${themeGet('colors.secondary')} ;
     @media only screen and (max-width: 780px) {
       width: 117px;
